@@ -23,7 +23,8 @@
   <!-- CSS -->
    <link rel="stylesheet" href="../portfolio/css/style.css">
   <!-- Javascript -->
-   <script src="../portfolio/src/main.js" defer></script>
+   <script type="module" src="../portfolio/src/main.js" defer></script>
+   <script type="module" src="../portfolio/src/projects.js" defer></script>
   </head>
 <body>
   <!-- Header -->
@@ -173,13 +174,13 @@
         <h2 class="title">My work</h2>
         <p class="description">Projects</p>
         <ul class="categories">
-          <li><button class="category category--selected">All <span class="category__count">8</span></button></li>
-          <li><button class="category">Vinilla <span class="category__count">3</span></button></li>
-          <li><button class="category">React <span class="category__count">3</span></button></li>
-          <li><button class="category">TypeScript <span class="category__count">2</span></button></li>
+          <li><button class="category category--selected" data-category="all">All <span class="category__count">8</span></button></li>
+          <li><button class="category" data-category="vanilla">Vanilla <span class="category__count">3</span></button></li>
+          <li><button class="category" data-category="react">React <span class="category__count">3</span></button></li>
+          <li><button class="category" data-category="typescript">TypeScript <span class="category__count">2</span></button></li>
         </ul>
         <ul class="projects">
-          <li class="project">
+          <li class="project" data-type="vanilla">
             <a href="#" taget="_blank">
               <img src="images/projects/project1.webp" alt="project1" class="project__img">
               <div class="project__metadata">
@@ -188,7 +189,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="typescript">
             <a href="#" taget="_blank">
               <img src="images/projects/project2.webp" alt="project2" class="project__img">
               <div class="project__metadata">
@@ -197,7 +198,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="vanilla">
             <a href="#" taget="_blank">
               <img src="images/projects/project3.webp" alt="project3" class="project__img">
               <div class="project__metadata">
@@ -205,7 +206,7 @@
                 <p>Clone Coding with HTML, CSS</p>
               </div>
             </a></li>
-          <li class="project">
+          <li class="project" data-type="react">
             <a href="#" taget="_blank">
               <img src="images/projects/project4.webp" alt="project4" class="project__img">
               <div class="project__metadata">
@@ -214,7 +215,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="typescript">
             <a href="#" taget="_blank">
             <img src="images/projects/project5.webp" alt="project5" class="project__img">
             <div class="project__metadata">
@@ -223,7 +224,7 @@
             </div>
           </a>
         </li>
-          <li class="project">
+          <li class="project" data-type="vanilla">
             <a href="#" taget="_blank">
             <img src="images/projects/project6.webp" alt="project6" class="project__img">
             <div class="project__metadata">
@@ -232,7 +233,7 @@
             </div>
           </a>
         </li>
-          <li class="project">
+          <li class="project" data-type="vanilla">
             <a href="#" taget="_blank">
               <img src="images/projects/project7.webp" alt="project7" class="project__img">
               <div class="project__metadata">
@@ -241,7 +242,7 @@
               </div>
             </a>
           </li>
-          <li class="project">
+          <li class="project" data-type="react">
             <a href="#" taget="_blank">
               <img src="images/projects/project8.webp" alt="project8" class="project__img">
               <div class="project__metadata">
